@@ -349,27 +349,27 @@
 </style>
 <style>
 /* Colourways. Same components, same photos; only the tokens move. Ink stays dark everywhere so prices and controls remain legible. */
-:root[data-theme="pastel"] {
-  --color-cream: #FFFCF7; --color-cream-deep: #FFF1E6;
-  --color-teal: #1C3F6E; --color-teal-deep: #142E52; --color-brand: #1C3F6E; --color-ink: #1C3F6E; --color-ink-soft: #4C6386;
-  --color-teal-tint: #DCEEFF; --color-brand-soft: #DCEEFF;
-  --color-mango: #FFD66B; --color-mango-soft: #FFF6D6;
-  --color-lilac: #E3D7FF; --color-lilac-soft: #F1EBFF;
-  --color-peach: #FFD3DF; --color-peach-soft: #FFE8EE;
-  --color-line: #EADFEF; --color-line-strong: #D5C6E2;
-  --color-ok: #2B7A5B; --color-ok-soft: #DDF3E8; --color-leaf: #2B7A5B;
-  --color-mint: #CFF0E3; --color-sky: #CFE6FF;
+:root[data-theme="sky"] {
+  --color-cream: #D6ECFF; --color-cream-deep: #FFF3AE;
+  --color-teal: #1E2F7A; --color-teal-deep: #141F55; --color-brand: #1E2F7A; --color-ink: #1E2F7A; --color-ink-soft: #46579B;
+  --color-teal-tint: #EEF7FF; --color-brand-soft: #EEF7FF;
+  --color-mango: #FFD23F; --color-mango-soft: #FFF3B5;
+  --color-lilac: #E6D4FF; --color-lilac-soft: #F2E9FF;
+  --color-peach: #FFC0D6; --color-peach-soft: #FFDDE8;
+  --color-line: #B5D8F5; --color-line-strong: #86BDEB;
+  --color-ok: #177A52; --color-ok-soft: #CFF3E1; --color-leaf: #177A52;
 }
-:root[data-theme="sunny"] {
-  --color-cream: #FFF7E8; --color-cream-deep: #FFE9C9;
-  --color-teal: #0E5F5B; --color-teal-deep: #0A4542; --color-brand: #0E5F5B; --color-ink: #0E5F5B; --color-ink-soft: #3F6F6C;
-  --color-teal-tint: #D4F0ED; --color-brand-soft: #D4F0ED;
-  --color-mango: #FFB800; --color-mango-soft: #FFEFC2;
-  --color-lilac: #D8C7FF; --color-lilac-soft: #EDE5FF;
-  --color-peach: #FFC6A3; --color-peach-soft: #FFE3D2;
-  --color-line: #F0DDB8; --color-line-strong: #DCC58F;
+:root[data-theme="candy"] {
+  --color-cream: #FFDFEA; --color-cream-deep: #CDF4E4;
+  --color-teal: #58197A; --color-teal-deep: #3F1058; --color-brand: #58197A; --color-ink: #58197A; --color-ink-soft: #7E4A9C;
+  --color-teal-tint: #FFF1F6; --color-brand-soft: #FFF1F6;
+  --color-mango: #FFD23F; --color-mango-soft: #FFF3B5;
+  --color-lilac: #D8C2FF; --color-lilac-soft: #ECE2FF;
+  --color-peach: #B9E8FF; --color-peach-soft: #DCF3FF;
+  --color-line: #F4B8CE; --color-line-strong: #EC8DB2;
+  --color-ok: #15825A; --color-ok-soft: #CFF3E1; --color-leaf: #15825A;
 }
-:root[data-theme="pastel"] .paw-pattern { background-color: var(--color-lilac-soft); }
+:root[data-theme] .paw-pattern { background-color: var(--color-lilac-soft); }
 .cw-btn { display: inline-flex; align-items: center; gap: 6px; border-radius: 999px; padding: 7px 10px; min-height: 32px; font-size: 12px; font-weight: 700; border: 1px solid var(--color-line-strong); background: #fff; color: var(--color-ink); white-space: nowrap; }
 .cw-btn[aria-pressed="true"] { border-color: var(--color-ink); background: var(--color-ink); color: var(--color-cream); }
 @media (max-width: 639px) { .cw-btn { padding: 7px 7px; } #cw { gap: 3px; } }
@@ -409,8 +409,8 @@
     
     <div class="ml-auto lg:ml-4 flex items-center gap-1" role="group" aria-label="Colourway" id="cw">
       <button class="cw-btn" data-cw="teal" aria-pressed="true"><span class="cw-dot" style="background:#164E4A"></span><span class="cw-dot -ml-2" style="background:#FFC857"></span><span class="hidden sm:inline">Teal</span></button>
-      <button class="cw-btn" data-cw="pastel" aria-pressed="false"><span class="cw-dot" style="background:#CFE6FF"></span><span class="cw-dot -ml-2" style="background:#FFD3DF"></span><span class="hidden sm:inline">Pastel</span></button>
-      <button class="cw-btn" data-cw="sunny" aria-pressed="false"><span class="cw-dot" style="background:#FFB800"></span><span class="cw-dot -ml-2" style="background:#FFC6A3"></span><span class="hidden sm:inline">Sunny</span></button>
+      <button class="cw-btn" data-cw="sky" aria-pressed="false"><span class="cw-dot" style="background:#8FD0FF"></span><span class="cw-dot -ml-2" style="background:#FFD23F"></span><span class="hidden sm:inline">Sky</span></button>
+      <button class="cw-btn" data-cw="candy" aria-pressed="false"><span class="cw-dot" style="background:#FFB3CC"></span><span class="cw-dot -ml-2" style="background:#8FE8C4"></span><span class="hidden sm:inline">Candy</span></button>
     </div>
     <nav class="hidden lg:flex items-center gap-1 text-[13px] font-medium">
       <a href="#direction" class="px-2.5 py-1.5 rounded-pill hover:bg-teal-tint">Direction</a>
@@ -496,22 +496,23 @@
     <div class="bg-white rounded-2xl p-4 shadow-card flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-brick shrink-0"></span><div><p class="font-bold text-sm">Brick red <span class="text-brand/50 font-semibold">#C0392B</span></p><p class="text-[13px] text-brand/65">Errors, sold out, unsupported PIN. 5.5:1 on cream.</p></div></div>
     <div class="bg-white rounded-2xl p-4 shadow-card flex items-center gap-3"><span class="w-10 h-10 rounded-xl bg-brand-soft border border-brand/15 shrink-0"></span><div><p class="font-bold text-sm">Teal tints</p><p class="text-[13px] text-brand/65">Soft fills, borders, hover washes. Never a second accent.</p></div></div>
   </div>
-  <div class="mt-8 flex items-end justify-between gap-3 flex-wrap"><div><p class="font-display font-bold text-xl">Three colourways to choose from</p><p class="text-brand/70 text-[14px] mt-1 max-w-2xl">Same layout, same components, same photos. Use the switch in the top bar (it works on the phone too) and the whole page, including the store demos below, changes with it. Ink stays dark in all three so product cards and prices never lose contrast.</p></div></div>
+  <div class="mt-8 flex items-end justify-between gap-3 flex-wrap"><div><p class="font-display font-bold text-xl">Three colourways to choose from</p><p class="text-brand/70 text-[14px] mt-1 max-w-2xl">Same layout, same components, same photos. Use the switch in the top bar (it works on the phone too) and the whole page, including the store demos below, changes with it. Sky and Candy colour the page itself, not just the accents; the ink stays dark in all three so product cards and prices never lose contrast.</p></div></div>
   <div class="grid md:grid-cols-3 gap-4 mt-4" id="cw-cards">
     <button class="text-left rounded-3xl overflow-hidden shadow-card card-lift bg-white border-2 border-transparent" data-cw="teal">
       <div class="h-24 flex"><span class="flex-1" style="background:#FFF8ED"></span><span class="flex-1" style="background:#164E4A"></span><span class="flex-1" style="background:#FFC857"></span><span class="flex-1" style="background:#DDD2F4"></span><span class="flex-1" style="background:#FFD8BD"></span></div>
-      <div class="p-4"><p class="font-display font-bold">Teal &amp; cream <span class="text-[11px] font-body font-bold uppercase tracking-wider text-brand/50 ml-1">current</span></p><p class="text-sm text-brand/70 mt-1">The brief's palette. Calm, premium, a little earthy. Mango is the only loud colour.</p></div>
+      <div class="p-4"><p class="font-display font-bold">Teal &amp; cream <span class="text-[11px] font-body font-bold uppercase tracking-wider text-brand/50 ml-1">the brief</span></p><p class="text-sm text-brand/70 mt-1">Calm and premium, a little earthy. Kept for comparison.</p></div>
     </button>
-    <button class="text-left rounded-3xl overflow-hidden shadow-card card-lift bg-white border-2 border-transparent" data-cw="pastel">
-      <div class="h-24 flex"><span class="flex-1" style="background:#FFFCF7"></span><span class="flex-1" style="background:#1C3F6E"></span><span class="flex-1" style="background:#FFD66B"></span><span class="flex-1" style="background:#E3D7FF"></span><span class="flex-1" style="background:#FFD3DF"></span><span class="flex-1" style="background:#CFE6FF"></span></div>
-      <div class="p-4"><p class="font-display font-bold">Pastel</p><p class="text-sm text-brand/70 mt-1">Baby colours on a warm white: sky, blush, lemon, lilac. Deep blue ink keeps it readable. Happiest of the three.</p></div>
+    <button class="text-left rounded-3xl overflow-hidden shadow-card card-lift bg-white border-2 border-transparent" data-cw="sky">
+      <div class="h-24 flex"><span class="flex-1" style="background:#D6ECFF"></span><span class="flex-1" style="background:#1E2F7A"></span><span class="flex-1" style="background:#FFD23F"></span><span class="flex-1" style="background:#FFC0D6"></span><span class="flex-1" style="background:#E6D4FF"></span><span class="flex-1" style="background:#FFF3AE"></span></div>
+      <div class="p-4"><p class="font-display font-bold">Sky</p><p class="text-sm text-brand/70 mt-1">The whole page is baby blue. Lemon, pink and lilac for sections, deep indigo ink and buttons. Loud and friendly.</p></div>
     </button>
-    <button class="text-left rounded-3xl overflow-hidden shadow-card card-lift bg-white border-2 border-transparent" data-cw="sunny">
-      <div class="h-24 flex"><span class="flex-1" style="background:#FFF7E8"></span><span class="flex-1" style="background:#0E5F5B"></span><span class="flex-1" style="background:#FFB800"></span><span class="flex-1" style="background:#D8C7FF"></span><span class="flex-1" style="background:#FFC6A3"></span></div>
-      <div class="p-4"><p class="font-display font-bold">Sunny</p><p class="text-sm text-brand/70 mt-1">In between: brighter teal, a bolder mango, warmer peach. More energy than the current, less sugar than pastel.</p></div>
+    <button class="text-left rounded-3xl overflow-hidden shadow-card card-lift bg-white border-2 border-transparent" data-cw="candy">
+      <div class="h-24 flex"><span class="flex-1" style="background:#FFDFEA"></span><span class="flex-1" style="background:#58197A"></span><span class="flex-1" style="background:#FFD23F"></span><span class="flex-1" style="background:#CDF4E4"></span><span class="flex-1" style="background:#D8C2FF"></span><span class="flex-1" style="background:#B9E8FF"></span></div>
+      <div class="p-4"><p class="font-display font-bold">Candy</p><p class="text-sm text-brand/70 mt-1">Baby-pink page, mint and lilac sections, a blue badge, grape ink and buttons. The sweetest of the three.</p></div>
     </button>
   </div>
-  <div class="g-rule"><strong class="font-display">Reference, Supertails:</strong> their homepage sits on white with very pale tints for section backgrounds (pink #FFF0F0, green #D3F5C6, yellow #FFFBD1, peach #F9D5C4) and one hot orange (#EF6C00) for every call to action, with lime (#A7D203) and teal (#108474) as secondary accents on near-black text. That is the “baby colours” effect Moumita means: light tints doing the mood, one strong colour doing the work. Pastel follows the same recipe with our own tints and keeps mango as the single action colour; Sunny keeps the brief's teal and simply turns the saturation up.</div>
+  <p class="text-[13px] text-brand/60 mt-3">White cards sit on the coloured page in both, so product photos, prices and buttons keep the same contrast as on cream. Only the surroundings get the colour.</p>
+  <div class="g-rule"><strong class="font-display">Reference, Supertails:</strong> their homepage sits on white with very pale tints for section backgrounds (pink #FFF0F0, green #D3F5C6, yellow #FFFBD1, peach #F9D5C4) and one hot orange (#EF6C00) for every call to action, with lime (#A7D203) and teal (#108474) as secondary accents on near-black text. That is the “baby colours” effect Moumita means: light tints doing the mood, one strong colour doing the work. Sky and Candy go a step further than Supertails: the page itself takes the tint, white cards carry the products, and one yellow does the work of their orange.</div>
   <div class="g-rule"><strong class="font-display">Rule:</strong> teal carries trust (prices, buttons, nav), mango carries joy (badges, highlights, paws). Lilac and peach are <em>backgrounds</em>, never text. Product cards themselves stay cream and white so prices and controls are always legible.</div>
   <div class="grid md:grid-cols-2 gap-4 mt-4">
     <div class="bg-white rounded-2xl shadow-card p-5">
@@ -1318,7 +1319,7 @@
         <li class="flex gap-2"><svg class="w-4 h-4 mt-0.5 text-ok shrink-0"><use href="#i-check"/></svg>Product names, pack sizes, prices and photos are from the live store.</li>
         <li class="flex gap-2"><svg class="w-4 h-4 mt-0.5 text-warn shrink-0"><use href="#i-info"/></svg>Add to cart, the cart and checkout are simulated. Nothing is ordered.</li>
         <li class="flex gap-2"><svg class="w-4 h-4 mt-0.5 text-warn shrink-0"><use href="#i-info"/></svg>Slots marked “Content needed” and “Needs app” are waiting on decisions listed at the end.</li>
-        <li class="flex gap-2"><svg class="w-4 h-4 mt-0.5 text-ok shrink-0"><use href="#i-check"/></svg>Three colourways: use the Teal / Pastel / Sunny switch in the top bar. The whole page changes with it.</li>
+        <li class="flex gap-2"><svg class="w-4 h-4 mt-0.5 text-ok shrink-0"><use href="#i-check"/></svg>Three colourways: use the Teal / Sky / Candy switch in the top bar. The whole page changes with it.</li>
       </ul>
     </div>
     <button class="btn btn-primary w-full mt-6" data-ack>I understand, show me the concept</button>
@@ -1715,15 +1716,15 @@ document.addEventListener('click', e => {
 
 // ---- Disclaimer on load ----
 // ---- Colourways ----
-const CW = ['teal', 'pastel', 'sunny'];
+const CW = ['teal', 'sky', 'candy'];
 function setCW(k, remember = true) {
   if (!CW.includes(k)) k = 'teal';
   if (k === 'teal') document.documentElement.removeAttribute('data-theme'); else document.documentElement.setAttribute('data-theme', k);
   document.querySelectorAll('[data-cw]').forEach(b => { const on = b.dataset.cw === k; if (b.hasAttribute('aria-pressed')) b.setAttribute('aria-pressed', on); if (b.closest('#cw-cards')) b.classList.toggle('border-brand', on); });
-  if (remember) { try { localStorage.setItem('mos-cw', k); } catch (_) {} }
+  if (remember) { try { localStorage.setItem('mos-cw2', k); } catch (_) {} }
 }
 document.addEventListener('click', e => { const b = e.target.closest('[data-cw]'); if (b) setCW(b.dataset.cw); });
-(() => { let k = new URLSearchParams(location.search).get('theme'); if (!k) { try { k = localStorage.getItem('mos-cw'); } catch (_) {} } setCW(k || 'teal', false); })();
+(() => { let k = new URLSearchParams(location.search).get('theme'); if (!k) { try { k = localStorage.getItem('mos-cw2'); } catch (_) {} } setCW(k || 'teal', false); })();
 
 // Shown on every load (review mode excepted) so nobody mistakes the demo for the shop.
 if (!new URLSearchParams(location.search).get('only')) setTimeout(() => openDialog('dlg-disclaimer'), 300);
